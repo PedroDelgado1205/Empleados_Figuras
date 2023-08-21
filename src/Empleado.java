@@ -1,14 +1,26 @@
-public class Empleado {
-    private double sueldoBruto=7890.55;
+public class Empleado extends Persona {
+    public double sueldoBruto=0;
 
     public void mostrar(){
-        //Persona per = new Persona();
-        //per.nombre="hola";
-        //per.mostrar();
+        System.out.println("nombre: "+ this.nombre);
+        System.out.println("edad: "+ this.edad);
+        System.out.println("sueldo bruto: "+ this.sueldoBruto);
+        System.out.println("salario: "+ this.calSalario());
+
     }
-    public void calcularSalario(){
-        double descuento = sueldoBruto * 10;
-        double neto = descuento - sueldoBruto;
-        System.out.println(neto);
+    public Empleado(){
+        this.nombre="s/n";
+        this.edad=0;
+        this.sueldoBruto=450.0;
+    }
+    public Empleado(String nombre, int edad, double sueldoBruto){
+        this.nombre=nombre;
+        this.edad=edad;
+        this.sueldoBruto=sueldoBruto;
+    }
+    public double calSalario(){
+        double descuento = this.sueldoBruto * 0.10;
+        descuento = this.sueldoBruto - descuento;
+        return descuento;
     }
 }

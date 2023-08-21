@@ -13,13 +13,18 @@ public class Main {
 
         //System.out.println("\n Valor PI: " + Persona.PI);
         //System.out.println("--------------");
-        //Empleado emp1 = new Empleado();
-        //emp1.calcularSalario();
-        //emp1.mostrar();
+        //Empleado emp = new Empleado();
+        //emp.calcularSalario();
+        //emp.mostrar();
         //System.out.println("--------------");
-        Operaciones factorial = new Operaciones();
-        factorial.numero=7;
-        factorial.getFactorial();
-        factorial.mostrarFactorial();
+        //Operaciones factorial = new Operaciones();
+        //factorial.numero=7;
+        //factorial.getFactorial();
+        //factorial.mostrarFactorial();
+        Empleado emp1 = new Empleado("Pedro", 30, 1234.56);
+        //emp1.nombre="Pedro";
+        //emp1.edad=20;
+        //emp1.sueldoBruto=1234.56;
+        emp1.mostrar();
     }
 }

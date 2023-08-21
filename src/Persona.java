@@ -1,7 +1,7 @@
 public class Persona {
     static final public double PI=3.1416;
-    String nombre="QWERTY";
-    private int edad=30;
+    protected String nombre="QWERTY";
+    protected int edad=30;
 
     public Persona(String name){
         this.nombre=name;
